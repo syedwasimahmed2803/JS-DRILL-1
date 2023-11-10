@@ -5,11 +5,12 @@ function carModelsAlphabeticaOrder(inventory) {
   const carModels = [];
 
   for (let i = 0; i < inventory.length; i++) {
-    carModels.push(inventory[i].car_model);
+    carModels.push(inventory[i].car_model.toLocaleUpperCase());
   }
-  carModels.sort(function (a, b) {
-    return a.toLowerCase().localeCompare(b.toLowerCase());
-});
+  carModels.sort();
+//   carModels.sort(function (a, b) {
+//     return a.toLowerCase().localeCompare(b.toLowerCase());
+// });
 
   for (let i = 0; i < carModels.length; i++) {
     console.log(carModels[i]);
