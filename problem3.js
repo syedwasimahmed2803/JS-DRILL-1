@@ -7,7 +7,9 @@ function carModelsAlphabeticaOrder(inventory) {
   for (let i = 0; i < inventory.length; i++) {
     carModels.push(inventory[i].car_model);
   }
-  carModels.sort();
+  carModels.sort(function (a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+});
 
   for (let i = 0; i < carModels.length; i++) {
     console.log(carModels[i]);
