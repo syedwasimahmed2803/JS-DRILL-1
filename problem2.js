@@ -8,7 +8,7 @@ function findCarInfo(inventory) {
         return curr;
     })
     car.push(carId)
-    console.log(`Last car is a ${car[0].car_make} ${car[0].car_model}`);
+    return car;
 }
 
 module.exports = { findCarInfo };

@@ -7,9 +7,8 @@ function getCarAge(carYears) {
     const carAge = carYears.filter((car) =>{
         return car < 2000;
     })
-    console.log(carAge);
-    console.log("Number of cars made before 2000:", carAge.length);
-    // return carAge;
+
+    return carAge;
 }
 
 module.exports = { getCarAge };
