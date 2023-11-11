@@ -4,12 +4,9 @@
 
 
 function getCarAge(carYears) {
-    const carAge = [];
-    for (let i = 0; i < carYears.length; i++) {
-        if (carYears[i] < 2000) {
-            carAge.push(carYears[i]);
-        }
-    }
+    const carAge = carYears.filter((car) =>{
+        return car < 2000;
+    })
     console.log(carAge);
     console.log("Number of cars made before 2000:", carAge.length);
     // return carAge;
